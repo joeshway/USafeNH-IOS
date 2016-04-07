@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,25 +24,99 @@
                                     <navigationItem title="uSafe NH" id="Wv9-85-DgX"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q67-D1-A27">
-                                <rect key="frame" x="253" y="289" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6LY-op-gSn">
+                                <rect key="frame" x="0.0" y="121" width="600" height="296"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-ej-JDY">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="296"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-cy-rez">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="keene_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HmJ-qs-brC">
+                                                        <rect key="frame" x="8" y="0.0" width="54" height="54"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keene State College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM6-JG-k7P">
+                                                        <rect key="frame" x="70" y="16" width="155" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3o-k9-tP8">
+                                                <rect key="frame" x="0.0" y="74" width="600" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="saint-anselm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cIk-8o-1Uc">
+                                                        <rect key="frame" x="8" y="0.0" width="54" height="54"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saint Anselm College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-KB-5uG">
+                                                        <rect key="frame" x="70" y="16" width="162" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHn-5J-q1U">
+                                                <rect key="frame" x="0.0" y="148" width="600" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-mountain_logo" translatesAutoresizingMaskIntoConstraints="NO" id="FRB-0Y-eUj">
+                                                        <rect key="frame" x="8" y="0.0" width="54" height="54"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="White Mountains Community College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfH-nh-kZi">
+                                                        <rect key="frame" x="70" y="16" width="284" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqs-ex-eNO">
+                                                <rect key="frame" x="0.0" y="222" width="600" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unh_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vok-vg-WAa">
+                                                        <rect key="frame" x="8" y="0.0" width="54" height="54"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="University of New Hampshire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IV-Wu-pz7">
+                                                        <rect key="frame" x="70" y="16" width="222" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lSp-eT-5b0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="29O-ys-6l1"/>
-                            <constraint firstItem="q67-D1-A27" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nGT-vV-gU3"/>
-                            <constraint firstItem="q67-D1-A27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9D-kh-WYx"/>
-                            <constraint firstItem="q67-D1-A27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uF9-hg-Qfm"/>
-                            <constraint firstItem="q67-D1-A27" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uxV-ct-gJu"/>
+                            <constraint firstItem="6LY-op-gSn" firstAttribute="top" secondItem="lSp-eT-5b0" secondAttribute="bottom" constant="54" id="2uc-ib-ezE"/>
+                            <constraint firstItem="lSp-eT-5b0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5tu-sn-nQI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lSp-eT-5b0" secondAttribute="trailing" constant="-20" id="BEM-3t-dJ5"/>
+                            <constraint firstItem="6LY-op-gSn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fb4-Ys-3e2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6LY-op-gSn" secondAttribute="bottom" constant="54" id="fsz-Kn-pf3"/>
+                            <constraint firstItem="6LY-op-gSn" firstAttribute="top" secondItem="lSp-eT-5b0" secondAttribute="bottom" constant="54" id="k85-nZ-plY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6LY-op-gSn" secondAttribute="trailing" constant="-20" id="mhh-3C-Y9A"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="keene_logo" width="194" height="200"/>
+        <image name="saint-anselm_logo" width="187" height="184"/>
+        <image name="unh_logo" width="997" height="1200"/>
+        <image name="white-mountain_logo" width="116" height="87"/>
+    </resources>
 </document>
