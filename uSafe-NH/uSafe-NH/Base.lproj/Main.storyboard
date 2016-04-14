@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZEe-f5-F4b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,21 +28,10 @@
                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="University of New Hampshire" image="unh_logo">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.22903080258141853" blue="0.57869764397905765" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="ys4-FV-XR0" kind="show" id="z53-uw-m1G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A3-2j-hWx">
-                                <rect key="frame" x="20" y="307" width="351" height="38"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="White Mountain Community College" image="white-mountain_logo">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ys4-FV-XR0" kind="show" id="6F1-Hs-7V9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh4-vy-keL">
@@ -83,6 +72,17 @@
                                     <segue destination="ys4-FV-XR0" kind="show" id="P1n-BZ-gsL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A3-2j-hWx">
+                                <rect key="frame" x="20" y="295" width="407" height="38"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="White Mountain Community College" image="white-mountain_logo">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ys4-FV-XR0" kind="show" id="6F1-Hs-7V9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,13 +94,14 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="rUI-rt-f5E"/>
                     <connections>
                         <segue destination="ys4-FV-XR0" kind="show" id="Ch3-yp-281"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="356"/>
+            <point key="canvasLocation" x="1354" y="356"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gPx-Wk-grm">
@@ -117,32 +118,69 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-mV-ZVH">
                                 <rect key="frame" x="256" y="151" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-ZP-Odv">
-                                <rect key="frame" x="283" y="201" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Pq0-sE-aeh"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gb-BE-bCg">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="uSafe NH" id="j6j-qH-kOs"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvk-QI-Rmo">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem image="crisis_center" width="75" id="VHP-xp-IxB"/>
+                                    <barButtonItem image="campus_security" width="75" id="VAr-99-aHv"/>
+                                    <barButtonItem image="hospital" width="75" id="0uy-8z-3sF"/>
+                                    <barButtonItem image="police" width="75" id="1by-oh-s8I"/>
+                                    <barButtonItem image="faq" width="75" id="KrV-To-lBy"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bvk-QI-Rmo" firstAttribute="centerX" secondItem="shS-G7-7Su" secondAttribute="centerX" id="MJT-my-kgT"/>
+                            <constraint firstItem="jVi-TP-Nwg" firstAttribute="top" secondItem="bvk-QI-Rmo" secondAttribute="bottom" id="VoW-aV-Tep"/>
+                            <constraint firstItem="9gb-BE-bCg" firstAttribute="centerX" secondItem="shS-G7-7Su" secondAttribute="centerX" id="hzB-OH-LXN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5T-Cs-xrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197" y="356"/>
+            <point key="canvasLocation" x="2009" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nY8-dy-QOi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZEe-f5-F4b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5D1-iQ-8W7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zlb-1h-kyD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWp-Jc-Jbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="356"/>
         </scene>
     </scenes>
     <resources>
+        <image name="campus_security" width="24" height="24"/>
+        <image name="crisis_center" width="24" height="24"/>
+        <image name="faq" width="24" height="24"/>
+        <image name="hospital" width="24" height="24"/>
         <image name="keene_logo" width="50" height="52"/>
+        <image name="police" width="24" height="24"/>
         <image name="saint-anselm_logo" width="50" height="49"/>
         <image name="unh_logo" width="50" height="60"/>
         <image name="white-mountain_logo" width="50" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ch3-yp-281"/>
+        <segue reference="z53-uw-m1G"/>
     </inferredMetricsTieBreakers>
 </document>
